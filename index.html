@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thegioididongFake.chao</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <script src="JS/index.js"></script>
+  </head>
+  <body onload="start();">
+    <header >
+      <div class="container">
+        <img  id="HDImg" src="images/t0.gif" />
+        <div class="hd">
+          <i class='bx bx-chevron-left' onclick="fBackhd();"></i>
+          <i class='bx bx-chevron-right' onclick="fNexthd();"></i>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href=""
+              ><img width="160px" src="images/logotgdd.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="">Tp.Hồ Chí Minh<i class='bx bx-chevron-down'></i></a>
+           <div >
+            <div class="ccontainer">
+              <div class="dong">
+                <h2>Đăng kí thành viên</h2>
+                <span id="clickdong">X Đóng</span>
+              </div>
+             
+              <form>
+                <label>Mã sinh viên</label><br />
+                <input class="i1" type="text" /><br />
+                <label>Họ và tên:</label><br />
+                <input class="i2" type="text" /><br />
+                <label>Email</label><br />
+                <input class="i3" type="text" /><br />
+                <label>Giới tính</label><br />
+        
+                <div class="gioitinh">
+                  <input type="radio" />
+                  <label>Nam</label>
+                  <input type="radio" />
+                  <label>Nữ</label> <br />
+                </div>
+                <label>Sở thích</label> <br />
+                <div class="sothich">
+                  <input type="checkbox" />
+                  <label>Đọc sách</label>
+                  <input type="checkbox" />
+                  <label>Du lịch</label>
+                  <input type="checkbox" />
+                  <label>Âm nhạc</label>
+                  <input type="checkbox" />
+                  <label>Ẩm thực</label>
+                  <input type="checkbox" />
+                  <label>Khác</label> <br />
+                </div>
+        
+                <label>Quốc tịch</label> <br />
+                <select>
+                  <option>Chọn quốc tịch</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+                <br />
+                <label>Ghi chú</label> <br />
+                <textarea cols="40" rows="5"></textarea> <br />
+                <input class="dangki" type="submit" value="Đăng kí" />
+              </form>
+            </div>
+           </div>
+            
+          </li>
+          <li>
+            <input type="text" placeholder="Bạn tìm gì..." /><i
+              class="bx bx-search"
+            ></i>
+          </li>
+          <li>
+            <a href=""></a><button><i class="bx bxs-cart"></i>Giỏ hàng</button>
+          </li>
+          <li>
+            <a href=""
+              >Lịch sử <br />
+              đơn hàng</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class='bx bxs-circle bx-flashing' style='color:#ffe301' ></i>Mua
+              thẻ nạp ngay!</a
+            >
+          </li>
+          <li><a href="">24h Công nghệ</a></li>
+          <li><a href="">Hỏi đáp</a></li>
+          <li><a href="">Game app</a></li>
+          <li id="form-dangki"><a  href="#" >Đăng nhập <br> Đăng kí</a></li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        var dangki = document.querySelector("#form-dangki");
+        dangki.addEventListener("click", function() {
+          document.querySelector(".ccontainer").style.display = "block";
+        })
+
+        var clickDong = document.querySelector("#clickdong");
+        clickDong.addEventListener("click", function(){
+          document.querySelector(".ccontainer").style.display = "none";
+        })
+      </script>
+    </nav>
+
+    <div class="hinhhaiben">
+      <img src="./images/haiben1.png" alt="">
+      <img src="./images/hb2.png" alt="">
+    </div>
+
+    <section class="menu-bar">
+      
+      <div class="container">
+        <div class="menu-bar-content">
+          <ul>
+            <li><a href=""><i class='bx bx-mobile-alt'></i></i>Điện thoại</a></li>
+            <li><a href=""><i class='bx bx-laptop' ></i></i>Laptop</a></li>
+            <li><a href=""><i class='bx bx-tab'></i>Tablet</a></li>
+            <li><a href=""><i class='bx bx-headphone'></i>Phụ kiện<i class='bx bx-chevron-down'></i></a>
+              <div class="submenu">
+                <ul>
+                  <li><a href=""><strong>PHỤ KIỆN DI ĐỘNG</strong></a></li>
+                  <li><a href=""><strong>PHỤ KIỆN LAPTOP</strong></a></li>
+                  <li><a href=""><strong>THƯƠNG HIỆU HÀNG ĐẦU</strong></a></li>
+                  <li><a href="">Pin, sạc dự phòng</a></li>
+                  <li><a href="">Chuột, bàn phím</a></li>
+                  <li><a href="">Apple</a></li>
+                  <li><a href="">Sạc, cáp</a></li>
+                  <li><a href="">Thiết bị mạng</a></li>
+                  <li><a href="">Samsung</a></li>
+                  <li><a href="">Miếng dán màn hình</a></li>
+                  <li><a href="">Camera, webcam</a></li>
+                  <li><a href="">Sony</a></li>
+                  <li><a href="">Ốp lưng điện thoại</a></li>
+                  <li><a href="">Balo, túi chống sốc</a></li>
+                  <li><a href="">JBL</a></li>
+                  <li><a href="">Ốp lưng máy tính bảng</a></li>
+                  <li><a href="">Phần mềm</a></li>
+                  <li><a href="">Xiaomi</a></li>
+                  <li><a href="">Gậy chụp ảnh, Gimbal</a></li>
+                  <li><a href=""><strong>THIẾT BỊ ÂM THANH</strong></a></li>
+                  <li><a href=""><strong>THIẾT BỊ LƯU TRỮ</strong></a></li>
+                  <li><a href="">Giá đỡ laptop, điện thoại</a></li>
+                  <li><a href="">Tai nghe</a></li>
+                  <li><a href="">Thẻ nhớ</a></li>
+                  <li><a href="">Đế móc điện thoại</a></li>
+                  <li><a href="">Loa</a></li>
+                  <li><a href="">USB</a></li>
+                  <li><a href="">Túi chống nước</a></li>
+                  <li><a href=""><strong>THIẾT BỊ NHÀ THÔNG MINH</strong></a></li>
+                  <li><a href="">Ổ cứng di động</a></li>
+                  <li><a href="">Túi đựng Airpods</a></li>
+                  <li><a href="">Khóa điện tử</a></li>
+                  <li><a href=""><strong>PHỤ KIỆN KHÁC</strong></a></li>
+                  <li><a href="">Phụ kiện Tablet</a></li>
+                  <li><a href="">Bóng đèn thông minh</a></li>
+                  <li><a href="">Phụ kiện ô tô</a></li>
+                  <li><a href="">Airtag</a></li>
+                  <li><a href="">TV Box</a></li>
+                  <li><a href="">Máy tính cầm tay</a></li>
+                  <li><a href=""></a></li>
+                  <li><a href="">Ổ cắm thông minh</a></li>
+                  <li><a href="">Quạt mini</a></li>
+                  <li><a href=""></a></li>
+                  <li><a href="">Máy chiếu</a></li>
+                  <li><a href="">Pin tiểu, pin điện thoại</a></li>
+                </ul>
+            </li>
+            <li><a href=""><i class='bx bxs-watch-alt'></i>Đồng hồ thông minh</a></li>
+            <li><a href=""><i class='bx bx-diamond'></i>AVAJi<i class='bx bx-chevron-down'></i></a>
+              <div class="submenu2">
+                <ul>
+                  <li><a href="">Máy in</a></li>
+                  <li><a href="">Mực in</a></li>
+                  <li><a href="">Màn hình máy tính</a></li>
+                  <li><a href="">Máy tính để bàn</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href=""><i class='bx bx-printer' ></i>PC, Máy in<i class='bx bx-chevron-down'></i></a>
+              <div class="submenu2">
+                <ul>
+                  <li><a href="">Máy in</a></li>
+                  <li><a href="">Mực in</a></li>
+                  <li><a href="">Màn hình máy tính</a></li>
+                  <li><a href="">Máy tính để bàn</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Máy cũ giá rẻ</a></li>
+            <li><a href="">Sim, thẻ cào</a></li>
+            <li><a href="">Trả góp, điện nước</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="slider">
+      <div class="container">
+        <div class="slider-content">
+          <div class="slider-content-left">
+            <div id="tranchuyendong" class="slider-content-left-top">
+              <img id="BannerImg" src="images/slideshow0.png">
+              <div class="slider-content-left-top-btn">
+                <i class='bx bx-chevron-left' onclick="fBack();"></i>
+                <i class='bx bx-chevron-right' onclick="fNext();"></i>
+              </div>
+              <div class="slider-content-left-top-stt">
+                <input type="text" id="chuyendoi" placeholder="1/5">
+              </div>
+            </div>
+            <div class="slider-content-left-bottom">
+              <li>Redmi Note 11 <br> Trả Góp %</li>
+              <li>Reno7 Z | Reno7 5G <br> Đặt Gạch Quà Ngon</li>
+              <li>Mua Galaxy S22 Series <br> Trả Góp 0% đến 24 tháng</li>
+              <li>Iphone 13 Series Xanh Lá <br> Sắp Về Hàng</li>
+              <li>Apple Watch S6 <br> Giảm đến 2,5 Triệu</li>
+            </div>
+          </div>
+          <div class="slider-content-right">
+              <li><a href=""><img src="images/r1.jpeg" alt=""></a></li>
+              <li><a href=""><img src="images/r2.jpeg" alt=""></a></li>
+              <li><a href=""><img src="images/r3.jpeg" alt=""></a></li>
+              <li><a href=""><img src="images/r4.jpeg" alt=""></a></li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="bannerbetween">
+        <img src="images/giua1.png" >
+      </div>
+    </div>
+
+
+    <section class="slider-product-one">
+      <div class="container">
+        <div class="slider-product-one-content">
+          <div class="slider-product-one-content-title">
+            <h2>Săn Sale Online Mỗi Ngày</h2>
+          </div>
+          <div class="slider-product-one-content-container">
+            <div class="slider-product-one-content-items-all">
+              <div class="slider-product-one-content-items">
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl1.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>Đặt trước 25/03</p> </li> 
+                    <li>OPPO Reno7 Z 5G</li>
+                    <li>Hàng sắp về</li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>9.490.000</strong>  <sup>đ</sup></li>
+                    <li>Bộ quà trị giá 3.49 Triệu (Máy Massage Cổ + Loa Bluetooth) + Trả góp 0%</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl2.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon3.png" alt=""><p>Giảm sốc 10%</p> </li> 
+                    <li>Samsung Galaxy A52s 5G 128GB</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">10.990.000 <sup>đ</sup></a> </li>
+                    <li>9.490.000 <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl3.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>VNPAY giảm 500K</p> </li> 
+                    <li>Iphone 13 Pro Max 128GB</li>
+                    <li>Quà 1.600.000 <sup>đ</sup></li>
+                    <li>33.990.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl4.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon3.png" alt=""><p>Thu cũ giảm 300K</p> </li> 
+                    <li>OPPO Reno6 Z 5G</li>
+                    <li>Quà 500.000 <sup>đ</sup></li>
+                    <li>9.490.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl5.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>Trợ giá mùa dịch</p> </li> 
+                    <li>Vivo Y21s 6GB</li>
+                    <li>Quà 300.000 <sup>đ</sup></li>
+                    <li>5.990.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+              
+              
+              </div>          
+              <div class="slider-product-one-content-items">
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl11.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>Đặt trước 25/03</p> </li> 
+                    <li>Lenovo IdeaPad 3 14ITL6 i5 <br>1135G7 (82H700WAVN)</li>
+                    <li>Quà 100.000đ</li>
+                    <li><a href="">17.990.000<sup></sup></a> <span></span> </li>
+                    <li><strong>16.190.000</strong>  <sup>đ</sup></li>
+                    
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl12.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon3.png" alt=""><p>Giảm sốc 10%</p> </li> 
+                    <li>Lenovo Yoga Duet 7 13ITL6 i5 <br>1135G7 (82MA000PVN)</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">28.990.000 <sup>đ</sup></a> </li>
+                    <li>25.690.000 <sup>đ</sup></li>
+                    <li>Quà 600.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl13.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>VNPAY giảm 500K</p> </li> 
+                    <li>Intel NUC M15 Kit i7 1165G7 <br>(BBC710BCUXBC1)</li>
+                    <li>Quà 100.000 <sup>đ</sup></li>
+                    <li><a href="">37.990.000</a>  <sup>đ</sup></li>
+                    <li>27.990.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl14.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon3.png" alt=""><p>Thu cũ giảm 300K</p> </li> 
+                    <li>Apple Watch Seies 7 LTE <br>41mm viền thép</li>
+                    <li> <sup></sup></li>
+                    <li><a href="">20.990.000</a>  <sup>đ</sup></li>
+                    <li>20.490.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl15.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>Trợ giá mùa dịch</p> </li> 
+                    <li>Apple Watch SE 40mm viền <br>nhôm dây silicone</li>
+                    <li>Online giá rẻ <sup></sup></li>
+                    <li><a href="">8.990.000</a><sup>đ</sup></li>
+                    <li>7.490.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-product-one-content-items">
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl6.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>Đặt trước 25/03</p> </li> 
+                    <li>Samsung Galaxy A12 6GB</li>
+                    <li>Quà 400.000đ</li>
+                    <li><a href="">4.690.000 <sup>đ</sup></a> </li>
+                    <li>4.290.000 <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl7.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon3.png" alt=""><p>Giảm sốc 10%</p> </li> 
+                    <li>Realme C21Y 4GB</li>
+                    <li>Quà 500.000đ</li>
+                    <li>4.290.000 <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl8.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>VNPAY giảm 500K</p> </li> 
+                    <li>Iphone 12 64GB</li>
+                    <li>Quà 1.600.000 <sup>đ</sup></li>
+                    <li><a href="">22.490.000 <sup>đ</sup></a> </li>
+                    <li>19.690.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl9.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon3.png" alt=""><p>Thu cũ giảm 300K</p> </li> 
+                    <li>Vivo Y33s</li>
+                    <li>Quà 300.000 <sup>đ</sup></li>
+                    <li>6.990.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                  <img src="images/sl10.jpeg">
+                  <div class="slider-product-one-content-item-text">
+                    <li><img src="images/icon2.png" alt=""><p>Trợ giá mùa dịch</p> </li> 
+                    <li>Xiaomi 11 Lite 5G NE</li>
+                    <li>Quà 1.200.000 <sup>đ</sup></li>
+                    <li>9.490.000 <sup>đ</sup></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+                </div>
+              
+              
+              </div>
+            </div>
+            <div class="slider-product-one-content-btn">
+              <i  class="bx bx-chevron-left left11"></i>
+              <i  class="bx bx-chevron-right right11"></i>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          /*------slidershow san pham noi bat */
+          var trai = document.querySelector(".left11");
+          var phai = document.querySelector(".right11");
+          var tongtruot = document.querySelectorAll(".slider-product-one-content-items");
+          var index = 0;
+          trai.addEventListener("click", function () {
+            index++;
+            if (index > tongtruot.length - 1) {
+              
+              index = 0;
+            }
+            document.querySelector(".slider-product-one-content-items-all").style.right =
+              index * 100 + "%";
+          });
+
+          phai.addEventListener("click", function () {
+            index = index - 1;
+            if (index < 0) {
+              index = tongtruot.length - 1;
+            }
+            document.querySelector(".slider-product-one-content-items-all").style.right =
+              index * 100 + "%";
+          });
+        </script>
+      </div>
+    </section>
+
+    <section class="product-dienthoainoibat">
+      <div class="container">
+        <div class="product-dienthoainoibat-content">
+          <div class="product-dienthoainoibat-content-title">
+            <h2>ĐIỆN THOẠI NỔI BẬT</h2>
+            <ul>
+              <li><a href="">Samsung Galaxy S22 Series</a></li>
+              <li><a href="">Iphone 13 Series</a></li>
+              <li><a href="">Oppo Reno6 Z</a></li>
+              <li><a href="">Xem tất cả <strong>177</strong> Điện thoại</a></li>
+            </ul>
+          </div>
+          <div class="product-dienthoainoibat-content-product">
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d1.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Samsung Galaxy S22 Ultra 5G <br>256GB</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>33.990.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 2.000.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d2.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Iphone 11 64GB</li>
+                    <li>Hàng sắp về</li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>9.490.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 1.800.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d3.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>OPPO Reno6 Z 5G</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>9.490.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 500.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d4.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Realmi C35</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>3.990.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d5.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Xiaomi 11T 5G 256GB</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>11.990.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 2.000.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d6.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Vivo V23e</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>8.490.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 500.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d7.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Xiaomi Redmi Note 11S</li>
+                    <li></li>
+                    <li><a href=""> 6.690.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>6.390.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d8.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Iphone 13 Pro Max 256GB</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>36.990.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 2.000.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d9.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Samsung Galaxy A52s 5G <br>128GB</li>
+                    <li>ONline giá rẻ</li>
+                    <li><a href=""> 10.990.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>10.690.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/d10.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">                   
+                    <li>Vivo Y15a</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>3.990.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 200.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-dienthoainoibat">
+      <div class="container">
+        <div class="product-dienthoainoibat-content">
+          <div class="product-dienthoainoibat-content-title">
+            <h2>LAPTOP, TABLET NỔI BẬT NHẤT</h2>
+            <ul>
+              <li><a href="">Laptop Asus</a></li>
+              <li><a href="">Laptop HP</a></li>
+              <li><a href="">Samsung Galaxy Tab S8+</a></li>
+              <li><a href="">Xem tất cả <strong>307</strong> Laptop</a></li>
+              <li><a href="">Xem tất cả <strong>59</strong> Tablet</a></li>
+            </ul>
+          </div>
+          <div class="product-dienthoainoibat-content-product">
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e1.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Lenovo Yoga Duet 7 13ITL6 i5 <br>1135G7 (82MA000PVN)</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">28.990.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>25.690.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 600.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e2.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Macbook Air M1 2020 7-core <br>GPU</li>
+                    <li></li>
+                    <li><a href=""> 33.990.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>28.090.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e3.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Acer Nitro 5 Gaming AN515 45 <br>R6EV R5 56000H...</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">23.990.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>21.590.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 1.800.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e4.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Dell Inspiron 15 3511 i3 1115G4 <br>(P112F001CBL)</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">15.290.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>15.090.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 400.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e5.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Samsung Galaxy Tab S8</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>20.990.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 3.000.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e6.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Asus VivoBook A415EA i3 <br>1125G4 (EB1748W)</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">15.990.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>14.700.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 100.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e7.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Dell Gaming G15 5511 i5 11400H (70266676)</li>
+                    <li></li>
+                    <li><a href=""> <sup></sup></a> <span></span> </li>
+                    <li><strong>27.490.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 1.580.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e8.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Asus ZenBook UX425EA i5 <br>1135G7 (KI839W)</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href=""> 23.990.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>22.190.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 100.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e9.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>MSI Gaming GF63 Thin 11UC i5 11400H (445VN)</li>
+                    <li></li>
+                    <li><a href=""> 24.490.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>24.190.000</strong>  <sup>đ</sup></li>
+                    <li>Quà 1.790.000đ</li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/e10.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">                   
+                    <li>Alcatel 3T8</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">2.990.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>2.690.000</strong>  <sup>đ</sup></li>
+                    
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-dienthoainoibat">
+      <div class="container">
+        <div class="product-dienthoainoibat-content">
+          <div class="product-dienthoainoibat-content-title">
+            <h2>PHỤ KIỆN NỔI BẬT NHẤT</h2>
+            <ul>
+              <li><a href="">Sạc dự phòng</a></li>
+              <li><a href="">Cáp sạc</a></li>
+              <li><a href="">Tai nghe</a></li>
+              <li><a href="">Loa</a></li>
+              <li><a href="">Ốp lưng</a></li>
+              <li><a href="">Xem tất cả <strong>2.556</strong> Phụ kiện</a></li>
+            </ul>
+          </div>
+          <div class="product-dienthoainoibat-content-product">
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p1.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Tai nghe Bluetooth Airpods 3 <br>Apple MME73 Trắng</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">5.490.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>4.590.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p2.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li>Tai nghe Bluetooth Airpods Pro <br>MagSafe Charge Apple MLWK..  </li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">6.790.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>5.190.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p3.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Tai nghe Bluetooth Airpods 2 <br>Apple MV7N2</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href=""> 4.390.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>3.390.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p4.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li style="font-size: 13px;">Tai nghe Bluetooth True Wireless <br> Samsung Galaxy Buds + R175</li>
+                    <li></li>
+                    <li><a href="">2.140.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>1.490.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p5.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Cáp Type C - Lightnining Apple <br>MM0A3 Trắng</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">590.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>531.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p6.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Loa Bluetooth Wetop A3 Đen</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">700.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>420.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p7.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text"> 
+                    <li>Pin sạc dự phòng Polymer <br>10.000 mAh Hydrus PA CK01</li>
+                    <li>Chỉ bán online</li>
+                    <li><a href=""> 490.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>196.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p8.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li style="font-size: 13px;">Tai nghe Bluetooth True Wireless <br> LG Tone Free HBS-FN4</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">2.790.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>990.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p9.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">
+                    <li style="font-size: 13px;">Pin sạc dự phòng Polymer <br> 10.000 mAh Type C eSaver PJ...</li>
+                    <li>Online giá rẻ</li>
+                    <li><a href="">600.000 <sup></sup></a> <span>đ</span> </li>
+                    <li><strong>360.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+            <div class="product-dienthoainoibat-content-product-item">
+              <img src="images/p10.jpeg">
+                  <div class="product-dienthoainoibat-content-product-item-text">                   
+                    <li>Webcam 1440P Rapoo C280 <br> Đen</li>
+                    <li></li>
+                    <li><a href=""> 1.190.000<sup></sup></a> <span>đ</span> </li>
+                    <li><strong>892.000</strong>  <sup>đ</sup></li>
+                    <li></li>
+                    <li>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star' style="color: #ddd;"></i>
+                    </li>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gioithieu">
+      <div class="container">
+        <div class="ft-tong">
+          <div class="ft-tong-top">
+              <div class="ft-tong-top-left">
+                <ul>
+                  <li><a href="">Lịch sử mua hàng</a></li>
+                  <li><a href="">Giới thiệu công ty (MWG.vn)</a></li>
+                  <li><a href=""><strong>Tổng đài hỗ trợ</strong>(Miễn phí gọi)</a></li>
+                  <li><a href="">Cộng tác bán hàng cùng TGDĐ</a></li>
+                  <li><a href="">Tuyển dụng</a></li>
+                  <li><a href="">Gọi mua:  <span>1800.1060</span>&ensp;(7:30 - 22:00)</a></li>
+                  <li><a href="">Tìm hiểu về mua trả góp</a></li>
+                  <li><a href="">Gửi góp ý, khiếu nại</a></li>
+                  <li><a href="">Kỹ thuật: <span>1800.1763&ensp;</span>(7:30 - 22:00)</a></li>
+                  <li><a href="">Chính sách bảo hành</a></li>
+                  <li><a href="">Tìm siêu thị (3.077 shop)</a></li>
+                  <li><a href="">Khiếu nại:  <span>1800.1062</span>&ensp;(8:00 - 21:30)</a></li>
+                  <li><a href="">Xem thêm<i class='bx bx-chevron-down'></i></a></li>
+                  <li><a href="">Xem bản mobie</a></li>
+                  <li><a href="">Bảo hành:  <span>1800.1064</span>&ensp;(8:00 - 21:00)</a></li>
+                </ul>
+              </div>
+
+              <div class="ft-tong-top-right">
+                <img src="images/ft.png" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <footer>     
+        © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020. <br>
+        Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt.   <br> Nguồn tham khảo: thegioididong.com 
+    </footer>
+   <!-- <script>
+     document.write("host: " + location.host + "<br>"); document.write("hostname: " + location.hostname + "<br>"); document.write("href: " + location.href + "<br>"); document.write("pathname: " + location.pathname + "<br>"); document.write("port: " + location.port + "<br>"); document.write("protocol: " + location.protocol + "<br>");
+   </script> -->
+  </body>
+</html>
